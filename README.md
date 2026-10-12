@@ -25,8 +25,9 @@ With rules (regex on the window title and/or the process name), windows can also
 
 ## Using it
 
-- **Click the Trayme icon** to open the menu: hidden windows, the switch "Minimize all windows to the tray", settings, about, exit
-- **Double-click the Trayme icon** to open the settings
+- **Click the Trayme icon** to open the settings and rules; clicking again hides them
+- **Right-click the Trayme icon** to open the menu: hidden windows, the switch "Minimize all windows to the tray", settings, about, exit
+- Under "Click on the Trayme icon" in the settings, the click can open the menu instead; a right-click always opens the menu
 - **Click the icon of a hidden window** to restore it; right-click → "Close program" really closes it
 - **Right-click the minimize button** of any window to send it to the tray, regardless of the rules (can be switched off in the settings)
 - **Hold Shift while minimizing** to keep a window on the taskbar just this once
@@ -44,6 +45,7 @@ The first matching rule wins; if none matches, "Minimize all windows to the tray
 | Process (regex) | name of the EXE, e.g. `^thunderbird\.exe$` |
 | Send to tray when minimized | hide the window when it is minimized |
 | Send to tray when closed | the X button and Alt+F4 hide the window instead of closing it |
+| Always show icon in the tray | the window keeps its tray icon even while it is open; a click shows it, or sends it to the tray if it is the active window |
 
 An empty field matches anything; a rule without any pattern is ignored.
 Both switches off = exception (the window never goes to the tray).

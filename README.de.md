@@ -25,8 +25,9 @@ Mit Regeln (RegEx auf Fenstertitel und/oder Prozessname) können Fenster auch be
 
 ## Bedienung
 
-- **Klick auf das Trayme-Symbol** öffnet das Menü: versteckte Fenster, der Schalter „Alle Fenster beim Minimieren in den Infobereich“, Einstellungen, Info, Beenden
-- **Doppelklick auf das Trayme-Symbol** öffnet die Einstellungen
+- **Klick auf das Trayme-Symbol** öffnet die Einstellungen und Regeln, ein erneuter Klick blendet sie wieder aus
+- **Rechtsklick auf das Trayme-Symbol** öffnet das Menü: versteckte Fenster, der Schalter „Alle Fenster beim Minimieren in den Infobereich“, Einstellungen, Info, Beenden
+- Unter „Klick aufs Trayme-Symbol“ in den Einstellungen kann der Klick stattdessen das Menü öffnen; Rechtsklick öffnet immer das Menü
 - **Klick auf das Symbol eines versteckten Fensters** holt es zurück; Rechtsklick → „Programm schließen“ beendet es wirklich
 - **Rechtsklick auf den Minimieren-Button** eines beliebigen Fensters schickt es in den Infobereich, unabhängig von den Regeln (in den Einstellungen abschaltbar)
 - **Umschalttaste beim Minimieren gedrückt halten**, damit ein Fenster dieses eine Mal in der Taskleiste bleibt
@@ -44,6 +45,7 @@ Die erste passende Regel gilt; passt keine, gilt „Alle Fenster beim Minimieren
 | Prozess (RegEx) | Name der EXE, z. B. `^thunderbird\.exe$` |
 | Beim Minimieren in den Infobereich | das Fenster wird beim Minimieren versteckt |
 | Beim Schließen in den Infobereich | X-Button und Alt+F4 verstecken das Fenster, statt es zu schließen |
+| Symbol immer im Infobereich zeigen | das Fenster behält sein Symbol im Infobereich, auch während es geöffnet ist; ein Klick zeigt es an bzw. schickt es in den Infobereich, wenn es das aktive Fenster ist |
 
 Ein leeres Feld passt auf alles; eine Regel ganz ohne Muster wird ignoriert.
 Beide Schalter aus = Ausnahme (das Fenster kommt nie in den Infobereich).
