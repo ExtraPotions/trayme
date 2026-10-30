@@ -69,6 +69,10 @@ Trayme updates itself from the [releases of this repository](https://github.com/
 - A download is only used if its signature (`.sig`) matches the key built into Trayme; anything else is rejected. Hidden windows are restored before the restart, and `Trayme.xml` stays untouched.
 - Installed with Scoop, Trayme only points to `scoop update trayme`.
 
+## Optional terminal startup helper
+
+[Terminal Tray Starter](tools/terminal-tray-starter/README.md) is an independent optional companion that sends newly opened standalone terminal windows to tray icons. Its source, build script, and native smoke tests are included; it does not modify the Trayme executable or its rules. Restoring a terminal leaves it visible, and normal helper shutdown restores all windows it hid.
+
 ## License
 
 Freeware – free to use, but **not for sale**. See [LICENSE](LICENSE).
